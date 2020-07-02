@@ -31,8 +31,7 @@ def grafana():
 	}
 	url = 'https://grafana.cdek.ru/api/tsdb/query'
 	headers = {
-		"Cookie": "_ym_uid=158549575265287668; _ym_d=1585495752; _ga=GA1.2.343409773.1585659178; _fbp=fb.1.1585659179505.720698839; flomni_5d665baf923155000a1819d7={%22userHash%22:%22fac19a97-0822-4461-8dba-a586f8ec975b%22}; flomni_5d713233e8bc9e000b3ebfd2={%22userHash%22:%22632113c8-fc52-40a0-b5ba-044e6f5c9147%22}; tmr_reqNum=32; tmr_lvid=94d9d8ddbfede0787f178b42c310920f; tmr_lvidTS=1587810033209; grafana_session=23eac49390afc0b91db4c1f1478ca448; ajs_user_id=%22cstuyi65atfijype4gbd6myujo%22; ajs_group_id=null; ajs_anonymous_id=%2200000000000000000000000000%22; flomni_5e79aad1f0f4ab000bdcdf87={%22userHash%22:%22e0c32c7d-ef41-42f8-8367-9066d5c3b558%22}; _gid=GA1.2.1395668709.1593326357"	
-	}
+		}
 	r = requests.post(url, json=payload_data, headers=headers, timeout = 10)
 	table = r.json()
 	
